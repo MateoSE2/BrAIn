@@ -12,7 +12,7 @@ import numpy as np
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Load the data of the images and its prompts, without index
-root = os.path.dirname(os.path.abspath(__file__))
+root = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 data_path = os.path.join(root, 'data/images_prompts.csv')
 images_prompts = pd.read_csv(data_path, sep=",", header=0, index_col = "filename")
 
