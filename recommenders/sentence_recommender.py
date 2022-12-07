@@ -22,7 +22,8 @@ prompts_embeddings = model.encode(images_prompts['prompt'], show_progress_bar=Tr
 
 # Get an input sentence from the user
 input_sentence = input("Enter a sentence: ")
-k = int(input("Enter the number of images to retrieve: "))
+#k = int(input("Enter the number of images to retrieve: "))
+k = 3
 
 # Get the embedding of the input sentence
 input_embedding = model.encode(input_sentence, show_progress_bar=True)

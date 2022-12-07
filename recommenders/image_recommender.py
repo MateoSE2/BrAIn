@@ -96,7 +96,7 @@ def getSimilarityMatrix(vectors):
         
 similarityMatrix = getSimilarityMatrix(allVectors)
 
-k = int(input("Enter the number of images to retrieve: "))
+k = int(input("Enter the number of images to retrieve: "))+1
 
 similarNames = pd.DataFrame(index = similarityMatrix.index, columns = range(k))
 similarValues = pd.DataFrame(index = similarityMatrix.index, columns = range(k))
